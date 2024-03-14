@@ -19,7 +19,7 @@ Get Offers
 import com.konfigthis.client.ApiClient;
 import com.konfigthis.client.ApiException;
 import com.konfigthis.client.ApiResponse;
-import com.konfigthis.client.OpenBanking;
+import com.konfigthis.client.OpenBankingAccountAndTransaction;
 import com.konfigthis.client.Configuration;
 import com.konfigthis.client.auth.*;
 import com.konfigthis.client.model.*;
@@ -35,7 +35,7 @@ public class Example {
     
     // Configure OAuth2 access token for authorization: PSUOAuth2Security
     configuration.accessToken = "YOUR ACCESS TOKEN";
-    OpenBanking client = new OpenBanking(configuration);
+    OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
     String accountId = "accountId_example"; // AccountId
     String xFapiAuthDate = "xFapiAuthDate_example"; // The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC
     String xFapiCustomerIpAddress = "xFapiCustomerIpAddress_example"; // The PSU's IP address if the PSU is currently logged in with the TPP.
@@ -133,7 +133,7 @@ Get Offers
 import com.konfigthis.client.ApiClient;
 import com.konfigthis.client.ApiException;
 import com.konfigthis.client.ApiResponse;
-import com.konfigthis.client.OpenBanking;
+import com.konfigthis.client.OpenBankingAccountAndTransaction;
 import com.konfigthis.client.Configuration;
 import com.konfigthis.client.auth.*;
 import com.konfigthis.client.model.*;
@@ -149,7 +149,7 @@ public class Example {
     
     // Configure OAuth2 access token for authorization: PSUOAuth2Security
     configuration.accessToken = "YOUR ACCESS TOKEN";
-    OpenBanking client = new OpenBanking(configuration);
+    OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
     String xFapiAuthDate = "xFapiAuthDate_example"; // The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC
     String xFapiCustomerIpAddress = "xFapiCustomerIpAddress_example"; // The PSU's IP address if the PSU is currently logged in with the TPP.
     String xFapiInteractionId = "xFapiInteractionId_example"; // An RFC4122 UID used as a correlation id.

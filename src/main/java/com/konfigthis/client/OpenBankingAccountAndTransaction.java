@@ -13,7 +13,7 @@ import com.konfigthis.client.api.StandingOrdersApi;
 import com.konfigthis.client.api.StatementsApi;
 import com.konfigthis.client.api.TransactionsApi;
 
-public class OpenBanking {
+public class OpenBankingAccountAndTransaction {
     private ApiClient apiClient;
     public final AccountAccessApi accountAccess;
     public final AccountsApi accounts;
@@ -28,11 +28,11 @@ public class OpenBanking {
     public final StatementsApi statements;
     public final TransactionsApi transactions;
 
-    public OpenBanking() {
+    public OpenBankingAccountAndTransaction() {
         this(null);
     }
 
-    public OpenBanking(Configuration configuration) {
+    public OpenBankingAccountAndTransaction(Configuration configuration) {
         this.apiClient = new ApiClient(null, configuration);
         this.accountAccess = new AccountAccessApi(this.apiClient);
         this.accounts = new AccountsApi(this.apiClient);

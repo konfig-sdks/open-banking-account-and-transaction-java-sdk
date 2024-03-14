@@ -1,8 +1,8 @@
 <div align="center">
 
-[![Visit Open banking](./header.png)](https://openbanking.org.uk)
+[![Visit Open banking](./header.png)](https://www.openbanking.org.uk&#x2F;)
 
-# [Open banking](https://openbanking.org.uk)
+# [Open banking](https://www.openbanking.org.uk&#x2F;)
 
 Swagger for Account and Transaction API Specification
 
@@ -21,7 +21,7 @@ If you are adding this library to an Android Application or Library:
 
 ## Installation<a id="installation"></a>
 <div align="center">
-  <a href="https://konfigthis.com/sdk-sign-up?company=Open%20Banking&serviceName=Account%20and%20Transaction&language=Java">
+  <a href="https://konfigthis.com/sdk-sign-up?company=Open%20Banking&%20serviceName=Account%20and%20Transaction%20&language=Java">
     <img src="https://raw.githubusercontent.com/konfig-dev/brand-assets/HEAD/cta-images/java-cta.png" width="70%">
   </a>
 </div>
@@ -98,7 +98,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 import com.konfigthis.client.ApiClient;
 import com.konfigthis.client.ApiException;
 import com.konfigthis.client.ApiResponse;
-import com.konfigthis.client.OpenBanking;
+import com.konfigthis.client.OpenBankingAccountAndTransaction;
 import com.konfigthis.client.Configuration;
 import com.konfigthis.client.auth.*;
 import com.konfigthis.client.model.*;
@@ -117,7 +117,7 @@ public class Example {
     configuration.clientId = "clientId";
     configuration.clientSecret = "clientSecret";
     
-    OpenBanking client = new OpenBanking(configuration);
+    OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
     OBReadConsent1Data data = new OBReadConsent1Data();
     Object risk = null; // The Risk section is sent by the initiating party to the ASPSP. It is used to specify additional details for risk scoring for Account Info.
     String xFapiAuthDate = "xFapiAuthDate_example"; // The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC

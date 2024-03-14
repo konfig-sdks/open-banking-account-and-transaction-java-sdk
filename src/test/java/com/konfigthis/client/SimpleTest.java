@@ -15,7 +15,7 @@ public class SimpleTest {
         // Configure OAuth2 access token for authorization: PSUOAuth2Security
         configuration.accessToken = "YOUR ACCESS TOKEN";
         
-        OpenBanking client = new OpenBanking(configuration);
+        OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
         assertNotNull(client);
     }
 }

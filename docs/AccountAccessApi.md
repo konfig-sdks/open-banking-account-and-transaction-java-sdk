@@ -20,7 +20,7 @@ Create Account Access Consents
 import com.konfigthis.client.ApiClient;
 import com.konfigthis.client.ApiException;
 import com.konfigthis.client.ApiResponse;
-import com.konfigthis.client.OpenBanking;
+import com.konfigthis.client.OpenBankingAccountAndTransaction;
 import com.konfigthis.client.Configuration;
 import com.konfigthis.client.auth.*;
 import com.konfigthis.client.model.*;
@@ -39,7 +39,7 @@ public class Example {
     configuration.clientId = "clientId";
     configuration.clientSecret = "clientSecret";
     
-    OpenBanking client = new OpenBanking(configuration);
+    OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
     OBReadConsent1Data data = new OBReadConsent1Data();
     Object risk = null; // The Risk section is sent by the initiating party to the ASPSP. It is used to specify additional details for risk scoring for Account Info.
     String xFapiAuthDate = "xFapiAuthDate_example"; // The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC
@@ -139,7 +139,7 @@ Delete Account Access Consents
 import com.konfigthis.client.ApiClient;
 import com.konfigthis.client.ApiException;
 import com.konfigthis.client.ApiResponse;
-import com.konfigthis.client.OpenBanking;
+import com.konfigthis.client.OpenBankingAccountAndTransaction;
 import com.konfigthis.client.Configuration;
 import com.konfigthis.client.auth.*;
 import com.konfigthis.client.model.*;
@@ -158,7 +158,7 @@ public class Example {
     configuration.clientId = "clientId";
     configuration.clientSecret = "clientSecret";
     
-    OpenBanking client = new OpenBanking(configuration);
+    OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
     String consentId = "consentId_example"; // ConsentId
     String xFapiAuthDate = "xFapiAuthDate_example"; // The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC
     String xFapiCustomerIpAddress = "xFapiCustomerIpAddress_example"; // The PSU's IP address if the PSU is currently logged in with the TPP.
@@ -246,7 +246,7 @@ Get Account Access Consents
 import com.konfigthis.client.ApiClient;
 import com.konfigthis.client.ApiException;
 import com.konfigthis.client.ApiResponse;
-import com.konfigthis.client.OpenBanking;
+import com.konfigthis.client.OpenBankingAccountAndTransaction;
 import com.konfigthis.client.Configuration;
 import com.konfigthis.client.auth.*;
 import com.konfigthis.client.model.*;
@@ -265,7 +265,7 @@ public class Example {
     configuration.clientId = "clientId";
     configuration.clientSecret = "clientSecret";
     
-    OpenBanking client = new OpenBanking(configuration);
+    OpenBankingAccountAndTransaction client = new OpenBankingAccountAndTransaction(configuration);
     String consentId = "consentId_example"; // ConsentId
     String xFapiAuthDate = "xFapiAuthDate_example"; // The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC
     String xFapiCustomerIpAddress = "xFapiCustomerIpAddress_example"; // The PSU's IP address if the PSU is currently logged in with the TPP.
